@@ -1,0 +1,377 @@
+/* RESET styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Make padding & borders part of the width/height */
+}
+
+/* Set background image for header & hero section */
+header, .hero {
+    background-image: url("bac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Dark background for entire body */
+body {
+    background-color: black;
+}
+
+/* NAVBAR styles */
+.navbar {
+    display: flex;
+    align-items: center; /* Vertically center logo & elements */
+    padding: 20px 180px;
+}
+
+/* Right-side section inside navbar */
+.navbar-right {
+    display: flex;
+    align-items: flex-start; /* Align to top */
+    gap: 10px;
+    margin-left: auto; /* Push to far right */
+}
+
+/* Netflix logo styles */
+.netflix-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #e50914;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+/* Language select styles */
+.select-btn select {
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* Sign-in button styles */
+.sign-btn button {
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+/* HERO section center-aligns content */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* Text block inside hero */
+.hero-text {
+    max-width: 800px;
+}
+
+/* Big heading text */
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Subtitle text */
+.hero-text p {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Smaller instructions text */
+.hero-text h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Email input styles */
+.hero-text input {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+/* "Get Started" button style */
+.hero-text button {
+    background-color: #e50914;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* TRENDING section heading */
+.trend-text h2 {
+    color: #fff;
+    margin: 50px 180px;
+}
+
+/* Display trending movies in a row */
+.trend-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 0 180px;
+  justify-content: center;
+}
+
+
+/* Style each trending box with background image and sizing */
+
+.trend-boxes > div {
+  height: 280px;
+  width: 200px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/* Individual box background images */
+.box1 { 
+    background-image: url("trending-box1.jpeg"); 
+}
+.box2 { 
+    background-image: url("trending-box2.jpeg"); 
+}
+.box3 { 
+    background-image: url("trending-box3.jpeg"); 
+}
+.box4 { 
+    background-image: url("trending-box4.jpeg"); 
+}
+
+@media screen and (max-width: 768px) {
+  .trend-boxes {
+    padding: 0 20px;
+  }
+
+  .trend-boxes > div {
+    width: 100%;         /* Full width on small screen */
+    max-width: 300px;    /* Optional */
+    margin: 0 auto 20px; /* Center and add spacing */
+  }
+
+  .trend-text h2 {
+    margin: 30px 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+
+/* REASON BOX SECTION STYLES */
+.reason-box {
+    color: #fff;
+}
+
+/* Heading of reasons section */
+.reason-text {
+    margin: 50px 180px;
+}
+
+/* Grid for reason boxes */
+.reason-boxes {
+    display: flex;
+    gap: 50px;
+    padding: 0 180px;
+    flex-wrap: wrap;
+}
+
+/* Reason box title */
+.reason-boxes h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Reason box text */
+.reason-boxes p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Individual reason box style */
+.reason-boxes > div {
+    background: linear-gradient(180deg, #1f2030 0%, #120f1a 100%);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FAQ SECTION */
+.questions-sec {
+    color: #fff;
+    margin-top: 50px 0;
+}
+
+/* FAQ heading */
+.q-text {
+    margin: 50px 180px;
+}
+
+/* List of questions */
+.q-sec {
+    margin: 50px 180px;
+}
+
+/* Individual question block */
+.q-sec > div {
+    background-color: #282626;
+    padding-left: 180px;
+    height: 80px;
+    align-items: center;
+    font-size: 20px;
+    padding: 25px 20px;
+    margin-bottom: 10px;
+}
+
+/* SIGN-IN SECTION at bottom */
+.signin-sec {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* Bottom sign-in text block */
+.sign-text h3 {
+    max-width: 800px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Email input style */
+.sign-text input {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+/* Get started button style */
+.sign-text button {
+    background-color: #e50914;
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: black;
+    color: #ccc;
+    padding: 40px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Footer heading text */
+.footer span {
+    color: #fff;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+/* Footer links columns container */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+/* Column links container */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer links style */
+.footer-column a {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Legal text style */
+.footer .p1 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+}
+
+/* Captcha disclaimer style */
+.footer .p2 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+.footer .p2 > a {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Footer Warning Message */
+.student-footer-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff9999;
+    background-color: rgba(255, 153, 153, 0.1);
+    padding: 10px 18px;
+    border: 1px dashed #ff4d4d;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.student-footer-warning i {
+    font-size: 17px;
+    color: #ff4d4d;
+}
+
+.student-hero-warning {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+}
+
+.student-hero-warning i {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
